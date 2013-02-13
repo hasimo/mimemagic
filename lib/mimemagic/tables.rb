@@ -777,6 +777,9 @@ class MimeMagic
     'zabw' => 'application/x-abiword',
     'zip' => 'application/zip',
     'zoo' => 'application/x-zoo',
+    'key' => 'application/x-iwork-keynote-sffkey',
+    'pages' => 'application/x-iwork-pages-sffpages',
+    'numbers' => ' application/x-iwork-numbers-sffnumbers',
   }
   TYPES = {
     'application/andrew-inset' => [%w(ez), %w(), "ATK inset"],
@@ -1336,6 +1339,9 @@ class MimeMagic
     'video/x-sgi-movie' => [%w(movie), %w(), "SGI video"],
     'video/x-theora+ogg' => [%w(ogg), %w(video/ogg), "Ogg Theora video"],
     'x-epoc/x-sisx-app' => [%w(sisx), %w(), "SISX package"],
+    'application/x-iwork-keynote-sffkey' => [%(key),%w(application/zip),"iWork keynote"],
+    'application/x-iwork-pages-sffpages' => [%(pages),%w(application/zip),"iWork Pages"],
+    'application/x-iwork-numbers-sffnumbers' => [%(numbers),%w(application/zip),"iWork Numbers"],
   }
   MAGIC = [
     ['application/vnd.stardivision.writer', [[2089, "StarWriter"]]],
